@@ -49,17 +49,17 @@ def renaming_files():
     files = [file for file in origin_folder.iterdir() if file.is_file()]
     
     for file in files:
+        old_name = file.parent / file.name
+        extension = file.suffix
         if count == True:
-            old_name = file.parent / file.name
-            new_name = file.parent / f"{counter} - {prefix}_{file.name}_{suffix}"
+            new_name = file.parent / f"{counter} - {prefix}_{file.stem}_{suffix}{extension}"
             try:
                 os.rename(old_name, new_name)
                 counter += 1
             except OSError as e:
                 print(f"Erro ao renomear arquivo: {e}")
         else:
-            old_name = file.parent / file.name
-            new_name = file.parent / f"{prefix}_{file.name}_{suffix}"
+            new_name = file.parent / f"{prefix}_{file.stem}_{suffix}{extension}"
             try:
                 os.rename(old_name, new_name)
             except OSError as e:
