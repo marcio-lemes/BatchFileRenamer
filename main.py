@@ -58,7 +58,6 @@ def renaming_files():
             except OSError as e:
                 print(f"Erro ao renomear arquivo: {e}")
         else:
-            old_name = file.parent / file.name
             new_name = file.parent / f"{prefix}_{file.name}_{suffix}"
             try:
                 os.rename(old_name, new_name)
