@@ -30,6 +30,7 @@ def naming_options():
         
         if choice == 1:
             count = True
+            print("\nContagem será adicionada!")
         elif choice == 2:
             prefix = input("\nQual prefixo você deseja adicionar?\n")
         elif choice == 3:
