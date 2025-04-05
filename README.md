@@ -3,11 +3,11 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 
 ## 📝 Descrição
-Ferramenta moderna de renomeação em massa que aproveita os recursos do Python 3.10+, incluindo:
-- Estrutura `match-case` para fluxo de controle seguro
-- Renomeação flexível com múltiplas opções
-- Validação robusta de caminhos
-- Interface CLI intuitiva
+Ferramenta Python para renomeação em massa de arquivos com:
+- Adição de prefixos/sufixos personalizados
+- Numeração automática
+- Interface intuitiva passo-a-passo
+- Validação de segurança para pastas
 
 ## ✨ Funcionalidades
 - 🔢 **Numeração automática** de arquivos
