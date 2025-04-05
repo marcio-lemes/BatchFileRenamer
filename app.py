@@ -1,14 +1,14 @@
 from main import renaming_files
 
 while True:
-    print("1 - Renomear arquivos.")
+    print("\n1 - Renomear arquivos.")
     print("2 - Sair.")
     
     try:
         choice = int(input("> "))
     except ValueError:
         print("Entrada deve ser um número.")
-        continue
+        pass
     
     match choice:
         case 1:

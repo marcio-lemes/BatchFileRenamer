@@ -26,7 +26,7 @@ def naming_options():
             choice = int(input("> "))
         except ValueError:
             print("\nEntrada deve ser um número.")
-            return
+            continue
         
         if choice == 1:
             count = True
@@ -44,6 +44,8 @@ def naming_options():
 
 def renaming_files():
     origin_folder = get_folder()
+    if not origin_folder:
+        return
     count, prefix, suffix = naming_options()
     counter = 1
     
