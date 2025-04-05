@@ -54,16 +54,9 @@ def renaming_files():
         extension = file.suffix
         if count == True:
             new_name = file.parent / f"{counter} - {prefix}_{file.stem}_{suffix}{extension}"
-            try:
-                os.rename(old_name, new_name)
-                counter += 1
-            except OSError as e:
-                print(f"Erro ao renomear arquivo: {e}")
+            counter += 1
         else:
-            new_name = file.parent / f"{prefix}_{file.stem}_{suffix}{extension}"
-            try:
-                os.rename(old_name, new_name)
-            except OSError as e:
-                print(f"Erro ao renomear arquivo: {e}")
+            new_name = file.parent / f"{prefix}_{file.stem}_{suffix}{extension}"    
+        os.rename(old_name, new_name)
                 
     print("Arquivos renomeados com sucesso!")
