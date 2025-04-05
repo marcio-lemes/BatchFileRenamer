@@ -7,6 +7,9 @@ def get_folder():
     if not path_folder.exists() or not path_folder.is_dir():
         print("Caminho inválido. Verifique se a pasta existe.")
         return None
+    elif not any(path_folder.iterdir()):
+        print("A pasta está vazia!")
+        return None
     return path_folder
 
 def naming_options():
