@@ -1,4 +1,4 @@
-from main import get_folder, naming_options, renaming_files
+from main import renaming_files
 
 while True:
     print("1 - Renomear arquivos.")
@@ -12,7 +12,10 @@ while True:
     
     match choice:
         case 1:
-            renaming_files()
+            try:
+                renaming_files()
+            except OSError as e:
+                print(f"Erro ao renomear arquivos: {e.strerror}")
         case 2:
             print("Saindo!")
             break
