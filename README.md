@@ -2,7 +2,6 @@
 
 [![Licença MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
-[![Match-Case](https://img.shields.io/badge/Feature-Match_Case-ff69b4)](https://peps.python.org/pep-0636/)
 
 ## 📝 Descrição
 Ferramenta moderna de renomeação em massa que aproveita os recursos do Python 3.10+, incluindo:
