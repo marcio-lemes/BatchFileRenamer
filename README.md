@@ -10,11 +10,11 @@ Ferramenta Python para renomeação em massa de arquivos com:
 - Validação de segurança para pastas
 
 ## ✨ Funcionalidades
-- 🔢 **Numeração automática** de arquivos
-- 🔤 **Prefixos/Sufixos** customizáveis
-- 🛡️ **Validação** de caminhos e arquivos
-- 🔄 **Renomeação segura** com tratamento de erros
-- 🖥️ **CLI amigável** com menu interativo
+- **Numeração automática** de arquivos
+- **Prefixos/Sufixos** customizáveis
+- **Validação** de caminhos e arquivos
+- **Renomeação segura** com tratamento de erros
+- **CLI amigável** com menu interativo
 
 ## 🛠 Tecnologias
 ```python
